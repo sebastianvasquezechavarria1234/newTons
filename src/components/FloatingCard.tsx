@@ -35,9 +35,13 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
         transition: 'box-shadow 0.2s',
       }}
     >
-      <span style={{ fontSize: 32, lineHeight: 1 }}>{card.icon}</span>
+      <img
+        src={card.image}
+        alt={card.title}
+        style={{ width: 48, height: 48, borderRadius: 10, objectFit: 'cover' }}
+      />
       <strong style={{ fontSize: 15, fontWeight: 600 }}>{card.title}</strong>
-      <span style={{ fontSize: 11, opacity: 0.85, lineHeight: 1.3 }}>{card.description}</span>
+      <span style={{ fontSize: 11, opacity: 0.85, lineHeight: 1.3, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{card.description}</span>
     </div>
   );
 });
