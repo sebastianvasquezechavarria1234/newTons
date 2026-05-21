@@ -10,14 +10,14 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
   return (
     <div
       ref={ref}
-      data-body-width="90"
+      data-body-width="120"
       data-body-height="200"
       className="select-none"
       style={{
         ...style,
-        width: 90,
+        width: 120,
         height: 200,
-        borderRadius: 16,
+        borderRadius: 0,
         background: `url(${card.image}) center / cover`,
         cursor: 'grab',
         boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
