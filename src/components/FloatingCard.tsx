@@ -18,7 +18,7 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
         width: 120,
         height: 200,
         borderRadius: 0,
-        background: `url(${card.image}) center / cover`,
+        background: '#000',
         cursor: 'grab',
         boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
         border: '1px solid rgba(255,255,255,0.1)',
