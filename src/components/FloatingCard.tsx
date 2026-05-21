@@ -18,7 +18,7 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
         width: 200,
         height: 140,
         borderRadius: 16,
-        background: card.gradient,
+        background: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${card.image}) center / cover`,
         padding: 20,
         cursor: 'grab',
         display: 'flex',
@@ -35,11 +35,6 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
         transition: 'box-shadow 0.2s',
       }}
     >
-      <img
-        src={card.image}
-        alt={card.title}
-        style={{ width: 48, height: 48, borderRadius: 10, objectFit: 'cover' }}
-      />
       <strong style={{ fontSize: 15, fontWeight: 600 }}>{card.title}</strong>
       <span style={{ fontSize: 11, opacity: 0.85, lineHeight: 1.3, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{card.description}</span>
     </div>

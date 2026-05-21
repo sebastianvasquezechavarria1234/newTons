@@ -3,7 +3,6 @@ export interface CardData {
   title: string;
   description: string;
   image: string;
-  gradient: string;
 }
 
 export interface PhysicsControls {

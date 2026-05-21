@@ -5,14 +5,14 @@ import { Sidebar } from './Sidebar';
 import { type CardData } from '../types';
 
 const INITIAL_CARDS: CardData[] = [
-  { id: 1, title: 'Neural Mesh', description: 'Reinforcement learning on the edge', image: '/048155170c820a3dad81ae1e5b043538.jpg', gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' },
-  { id: 2, title: 'Quantum Render', description: 'Real-time ray tracing engine', image: '/16d276dae2b866be1c8faed7ccc1bb15.jpg', gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' },
-  { id: 3, title: 'Data Vortex', description: 'Streaming analytics pipeline', image: '/47c98aecdfdaa0e4c8a585642981b357.jpg', gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)' },
-  { id: 4, title: 'Wave Sync', description: 'Collaborative audio workstation', image: '/8496ace83d5a13daeb68a6516c58dd99.jpg', gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)' },
-  { id: 5, title: 'Orbit DB', description: 'Distributed graph database', image: '/c09384d9ab2dade46db96408a33caba9.jpg', gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)' },
-  { id: 6, title: 'Cipher Core', description: 'Homomorphic encryption layer', image: '/ce7d991bd59fe943385fbea80dd7b222.jpg', gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)' },
-  { id: 7, title: 'Fusion API', description: 'GraphQL + WebSocket gateway', image: '/d5b90ec3e614ccd60a5479919c95dd4e.jpg', gradient: 'linear-gradient(135deg, #fccb90 0%, #d57eeb 100%)' },
-  { id: 8, title: 'Pixel Flow', description: 'AI-powered video synthesis', image: '/048155170c820a3dad81ae1e5b043538.jpg', gradient: 'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)' },
+  { id: 1, title: 'Neural Mesh', description: 'Reinforcement learning on the edge', image: '/048155170c820a3dad81ae1e5b043538.jpg' },
+  { id: 2, title: 'Quantum Render', description: 'Real-time ray tracing engine', image: '/16d276dae2b866be1c8faed7ccc1bb15.jpg' },
+  { id: 3, title: 'Data Vortex', description: 'Streaming analytics pipeline', image: '/47c98aecdfdaa0e4c8a585642981b357.jpg' },
+  { id: 4, title: 'Wave Sync', description: 'Collaborative audio workstation', image: '/8496ace83d5a13daeb68a6516c58dd99.jpg' },
+  { id: 5, title: 'Orbit DB', description: 'Distributed graph database', image: '/c09384d9ab2dade46db96408a33caba9.jpg' },
+  { id: 6, title: 'Cipher Core', description: 'Homomorphic encryption layer', image: '/ce7d991bd59fe943385fbea80dd7b222.jpg' },
+  { id: 7, title: 'Fusion API', description: 'GraphQL + WebSocket gateway', image: '/d5b90ec3e614ccd60a5479919c95dd4e.jpg' },
+  { id: 8, title: 'Pixel Flow', description: 'AI-powered video synthesis', image: '/048155170c820a3dad81ae1e5b043538.jpg' },
 ];
 
 const DEFAULT_CONTROLS = {
