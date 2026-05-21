@@ -10,33 +10,20 @@ export const FloatingCard = forwardRef<HTMLDivElement, Props>(function FloatingC
   return (
     <div
       ref={ref}
-      data-body-width="200"
-      data-body-height="140"
+      data-body-width="190"
+      data-body-height="300"
       className="select-none"
       style={{
         ...style,
-        width: 200,
-        height: 140,
+        width: 190,
+        height: 300,
         borderRadius: 16,
-        background: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${card.image}) center / cover`,
-        padding: 20,
+        background: `url(${card.image}) center / cover`,
         cursor: 'grab',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
         boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-        backdropFilter: 'blur(4px)',
-        border: '1px solid rgba(255,255,255,0.15)',
-        color: 'white',
-        textAlign: 'center',
-        fontFamily: 'system-ui, sans-serif',
+        border: '1px solid rgba(255,255,255,0.1)',
         transition: 'box-shadow 0.2s',
       }}
-    >
-      <strong style={{ fontSize: 15, fontWeight: 600 }}>{card.title}</strong>
-      <span style={{ fontSize: 11, opacity: 0.85, lineHeight: 1.3, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{card.description}</span>
-    </div>
+    ></div>
   );
 });
